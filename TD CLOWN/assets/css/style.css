@@ -1,0 +1,97 @@
+.convergence-regular {
+    font-family: "Convergence", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+* {
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+.game-background {
+    background-image: url(../images/background.jpg);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    margin-top: 120px;
+    font-size: 100px;
+    text-align: center;
+  
+}
+
+p {
+    text-align: center;
+    margin: 20px 50px;
+    font-size: 20px;
+    color: white;
+    
+}
+
+#gameContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+#target {
+    position: absolute;
+    width: 100px;
+    cursor: grab;
+transition: all 1s ease;
+}
+
+
+li {
+    list-style-type: none;
+    border: 1 solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.start-game {
+    margin: auto;
+    border: 3px solid rgba(28, 194, 255, 0.749);
+    border-radius: 10px;
+    padding: 20px 35px;
+    text-align: center;
+    text-decoration: none;
+    background: url(../images/ciel.webp);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    font-weight: bold;
+    color: white
+}
+
+header .start-game {
+    text-align: center;
+    background: url(../images/ciel.webp);
+    color: white;
+    background-clip: text;
+}
+
+.link-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.end {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+.first-page{
+    background: url(../images/logo.jpeg);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ASSETS/CSS/style.css">
+    <title>Promos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Old School</h1>
+    </header>
+
+    <main>
+        <article id="formContainer">
+            <h2>Nouvelle promo</h2>
+            <form action="">
+                <input type="text" id="name" placeholder="Nom de la Promo">
+                <p id="nameError"></p>
+
+                <label for="start">Date de début</label>
+                <input type="date" id="start">
+                <p id="startDateError"></p>
+                
+                <label for="end">Date de fin</label>
+                <input type="date" id="end">
+                <p id="endDateError"></p>
+
+                <button type="button" onclick="send()">Créer une promo</button>
+            </form>
+        </article>
+        <section>
+            <h3>Vos Promos</h3>
+            <div id="newContent">
+
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="./ASSETS/JS/main.js"></script>
+</body>
+
+</html>

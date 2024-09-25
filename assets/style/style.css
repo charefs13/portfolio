@@ -1,0 +1,837 @@
+/* Existant */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #555555;
+    color: white;
+    font-family: 'Nunito';
+}
+
+.main-container.responsive {
+    display: none;
+}
+
+.main-container {
+    position: relative;
+    /* Assurez-vous que .main-container est positionné relativement */
+    z-index: 1;
+    /* Assurez-vous que .main-container est en dessous de .modale-section si nécessaire */
+}
+
+
+strong {
+    background-color: black;
+    font: 'Inconsolata';
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c2c2c2;
+}
+.burger {
+    display: none;
+}
+nav ul {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    align-items: center;
+    margin-right: 160px;
+}
+
+nav li {
+    list-style: none;
+}
+
+.divider {
+    font-size: 25px;
+    font-weight: lighter;
+    background-color: #2f2f2f00;
+}
+
+.main-container {
+    border: 1px solid white;
+    box-shadow: rgba(255, 255, 255, 0.437) 0px 5px 15px;
+    border-radius: 20px;
+    margin: 0 150px;
+    padding: 20px 15px;
+    height: 90vh;
+    position: relative;
+
+}
+
+
+
+h1 {
+    font-size: 60px;
+    font-family: 'Nunito';
+    text-shadow: 2px 2px 4px rgba(253, 253, 253, 0.634);
+
+}
+
+.terminal-container div {
+    background-color: black;
+}
+
+
+
+p {
+    font-size: 15px;
+}
+
+article {
+    text-align: center;
+    margin: 25px 100px;
+    max-height: 50vh;
+
+
+}
+
+.red {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(245, 66, 66);
+}
+
+.yellow {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(254, 214, 53);
+}
+
+.green {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(54, 213, 78);
+}
+
+.terminal-icon {
+    background-color: #2F2F2F;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.terminal-header-content {
+    background-color: #2F2F2F;
+
+
+}
+
+.terminal-header {
+    background-color: #2F2F2F;
+    padding: 10px;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 45px 0px 45px;
+
+}
+
+.terminal-header-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.terminal-header-content h2 {
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 100px;
+}
+
+h2 {
+    margin: 0;
+    background-color: #2F2F2F;
+}
+
+.terminal-container {
+    display: block;
+    background-color: black;
+    padding: 10px 20px;
+    height: 400px;
+    width: 90%;
+    margin: 0px 45px 50px 45px;
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.terminal-container ul,
+li {
+    list-style-type: circle;
+    display: block;
+    font-size: 15px;
+    text-align: start;
+    background-color: black;
+}
+
+.description p:last-child {
+    margin-bottom: 140px;
+}
+
+
+
+.formation {
+    margin: 100px auto;
+}
+
+.formation h3 {
+    margin: 150px;
+}
+
+.experience h3 {
+    margin: 50px;
+}
+
+.experience {
+    margin: 150px auto
+}
+
+.formation p {
+    text-align: center;
+    margin: auto;
+}
+
+.terminal-container p {
+    font-size: 15px;
+    text-align: start;
+    background-color: black;
+    margin: 35px auto;
+    font-family: 'Source code Pro';
+    color: #bbbbbb;
+}
+
+.quality-container {
+    background-color: black;
+
+}
+
+.quality-container p {
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Inconsolata';
+    font-weight: bolder;
+    width: fit-content;
+    color: white;
+}
+
+.quality-container li {
+    font-size: 15px;
+    margin: 15px auto;
+    text-align: center;
+    color: #bbbbbb;
+}
+
+h3 {
+    text-align: center;
+    margin: 50px;
+    font-size: 20px;
+    font-family: 'Inconsolata';
+    color: white;
+    background-color: black;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    height: 350px;
+    width: 100%;
+}
+
+.contact {
+    margin-bottom: 150px;
+}
+
+.contact a {
+    font-size: 20px;
+    text-align: start;
+    background-color: black;
+    font-family: 'Source code Pro';
+    color: #bbbbbb;
+}
+
+.terminal-container button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 5px;
+    border: none;
+    background-color: #808080;
+    color: white;
+    min-width: 150px;
+    text-align: center;
+    font-family: 'Inconsolata';
+    transition: background-color 0.5s ease;
+}
+
+.terminal-container button:hover {
+    background-color: #cacaca;
+    color: black;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+    height: 2rem;
+    margin-right: 170px;
+    background-color: #2f2f2f00;
+    gap: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 81%;
+
+}
+
+footer img {
+    height: 1rem;
+    background-color: #2f2f2f00;
+}
+
+footer a {
+    font-size: 10px;
+    background-color: #2f2f2f00;
+}
+
+footer div {
+    background-color: #55555500;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+/* Optionally, add some styles for the title animation */
+#title {
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+/* Modale projet */
+.modale-section {
+    border: 1px solid white;
+    box-shadow: rgb(0, 0, 0) 3px 10px 20px;
+    border-radius: 20px;
+    padding: 20px 15px;
+    height: 90vh;
+    background: rgba(255, 255, 255, 0.563);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 75%;
+    display: none;
+    animation: showModal 0.5s ease;
+}
+
+@keyframes showModal {
+    from {
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+
+.modale-section .red p {
+    font-size: 12px;
+    text-align: center;
+    background-color: #2f2f2f00;
+    margin: 3px 3px 3px 3px;
+    color: rgb(171, 1, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: none;
+}
+
+.modale-section .red:hover p {
+    display: block;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.modale-section .terminal-header {
+    margin: 0 50px;
+    text-align: center;
+}
+
+.modale {
+    height: 75vh;
+    width: 90%;
+    margin: 0 50px;
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#projetTitle {
+    font-size: 20px;
+}
+
+
+.modale .imc,
+.modale .todo,
+.modale .pendu .modale .morpion,
+.modale .catchme,
+.modale .school {
+    display: none;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* STYLE POUR PROJET IMC  */
+
+.imc {
+    background-color: #555555;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.imc .container {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.imc h1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    background-color: #555555;
+    font-size: 50px;
+}
+
+.imc h2 {
+    color: #ffffff;
+    margin: 20px 0;
+    background-color: #555555;
+    font-size: 20px;
+}
+
+.imc p {
+    line-height: 1.6;
+    color: white;
+}
+
+.imc input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.imc button {
+    margin-top: 15px;
+    background-color: #969696;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.imc button:hover {
+    background: #3a3a3a91;
+    transition: 0.3s;
+}
+
+.imc #res,
+.imc #inter {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* STYLE TODO LIST */
+
+
+.todo {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.todo form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.todo input[type="text"]:focus,
+textarea:focus {
+    border-color: #ffffff;
+    outline: none;
+}
+
+.todo button {
+    padding: 10px 20px;
+    background-color: #969696;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo button:hover {
+    background-color: #3a3a3a91;
+}
+
+.todo #title {
+    font-family: 'Verdana', sans-serif;
+}
+
+.todo #details {
+    font-family: 'Courier New', monospace;
+}
+
+
+/* Post-it style for new tasks */
+.todo article {
+    background: #fffb88;
+    /* Light yellow background for the post-it note */
+    border: 2px solid #ffeb3b;
+    /* Yellow border */
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    /* Shadow to give it a lifted effect */
+    transform: rotate(-3deg);
+    /* Slightly rotated to look like a note stuck on a board */
+    font-family: 'Comic Sans MS', cursive;
+    max-width: 600px;
+    position: relative;
+    /* Ensures the remove button can be positioned */
+}
+
+/* Title style */
+.todo article h2 {
+    margin-top: 0;
+    color: #2F2F2F;
+    /* Orange text color for the title */
+    background: #fffb88;
+    /* Light yellow background for the post-it note */
+
+}
+
+/* Details text style */
+.todo article p {
+    white-space: pre-wrap;
+    /* Ensure text maintains formatting */
+    background: #fffb88;
+    color: #2F2F2F;
+    /* Light yellow background for the post-it note */
+
+}
+
+/* Style for the remove button */
+.todo article button {
+    padding: 5px 10px;
+    background-color: #969696;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.todo article button:hover {
+    background-color: #3a3a3a91;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* STYLE Pendu */
+
+.pendu {
+    margin: O;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+
+}
+
+
+
+.pendu #keybord {
+
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    gap: 10px;
+}
+
+.pendu button {
+    background-color: #2F2F2F;
+    text-shadow: 2px 2px 4px rgba(253, 253, 253, 0.634);
+
+    border-radius: 10px;
+    margin: 5px 5px;
+    padding: 10px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+    outline: none;
+    border: none;
+
+}
+
+.pendu section {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+}
+
+
+.pendu h3 {
+    background-color: #555555;
+    margin: 25px 0;
+    font-family: 'Inconsolata';
+}
+
+.pendu h2 {
+    background-color: #555555;
+    margin-bottom: 10px;
+    font-family: 'Inconsolata';
+
+}
+
+.pendu p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+iframe {
+    border-radius: 0px 0px 12px 12px;
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1000px) {
+    .burger {
+        display: block;
+        width: 5%;
+    }
+    .main-container.responsive {
+        display: block;
+    }
+
+    .main-container,
+    .nav-bar {
+        display: none;
+    }
+
+    footer {
+        bottom: 0px;
+    }
+
+    .responsive {
+        display: block;
+    }
+
+    .main-container.responsive {
+        width: 90%;
+        margin: 50px auto;
+
+    }
+
+    .responsive .terminal-container,
+    .terminal-header {
+        width: 100%;
+        margin: 0;
+        overflow: auto;
+
+    }
+
+    .main-container.responsive {
+        position: relative;
+        height: 500px;
+    }
+
+    .responsive article {
+        border: 0px 0px 12px 12px;
+        width: 100%;
+        margin: auto;
+
+
+    }
+
+    .terminal-header {
+        padding: 5px;
+    }
+
+    .terminal-container {
+        width: 100%;
+        padding: 0;
+        height: 300px
+    }
+
+    .terminal-icon {
+        gap: 3px;
+    }
+
+    .red,
+    .yellow,
+    .green {
+        width: 10px;
+        height: 10px;
+    }
+
+    .main-container.responsive h2 {
+        font-size: 10px;
+        margin: 0px 40px 0px 0px;
+    }
+
+    .main-container h3 {
+
+        font-size: 10px;
+        margin: 20px 30px;
+    }
+
+    .main-container.responsive p {
+        font-size: 12px;
+        margin: 15px;
+        padding: 0;
+    }
+
+    .carroussel {
+        width: 100%;
+        height: 380px;
+        display: flex;
+        flex-direction: column;
+        flex-direction: center;
+        margin: 0;
+    }
+
+    .carroussel img {
+        width: 15px;
+        position: absolute;
+        bottom: 20px;
+        right: 55%;
+        left: 45%;
+        background-color: #2f2f2f00;
+
+    }
+
+    .carroussel img:hover {
+        width: 25px;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+
+    button {
+        font-size: 10px;
+        min-width: 50px;
+        padding: 5px 10px;
+    }
+
+
+    .quality-container li {
+        font-size: 10px;
+        margin: 15px auto;
+        text-align: center;
+        color: #bbbbbb;
+    }
+
+    .terminal-container ul,
+    li {
+        list-style-type: circle;
+        display: block;
+        font-size: 10px;
+        text-align: start;
+        background-color: black;
+    }
+
+    strong {
+        font-size: 10px;
+    }
+
+    
+
+
+.slide {
+
+    width: 100%;
+    display: none;
+    opacity: 0;
+    transition: transform 1 ease-in, opacity 1 ease-in;
+    transform: translateY(100%);
+}
+
+.slide.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+.burger {
+    display: block;
+    position: absolute;
+    top: O;
+    right: 0;
+    width: 20px;
+}
+}

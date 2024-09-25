@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+
+
+a:hover {
+    color: #0056b3;
+}
+
+h2,
+h3 {
+    margin: 25px auto;
+    color: #444;
+}
+
+h4 {
+    margin: 10px auto;
+    color: #666;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    width: 300px;
+    margin: auto;
+}
+form p {
+    font-size: 10px;
+    color: red;
+    margin-bottom: 15px;
+}
+
+input {
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    border: 1px solid #0056b3;
+    padding: 8px 13px;
+}
+
+#newContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.newDiv {
+    border: 1px solid #ddd;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.newDiv:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
+}
+
+.newDiv button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newDiv button:hover {
+    background-color: #0056b3;
+    border: 1px solid #0056b3;
+}
+
+.studentContainer {
+    border: 1px solid #ddd;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 25px auto;
+}
+
+
+.studentContainer:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
+}
+
+#studentPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style pour le lien en forme de bouton */
+.btn-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Style pour le lien en forme de bouton au survol */
+.btn-link:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+/*  STYLE POUR LE FORMULAIRE DE MODIFICATION */
+.modifyForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.modifyForm input {
+    margin-bottom: 8px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+}
+
+.modifyForm button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.modifyForm button:hover {
+    background-color: #0056b3;
+    border: 1px solid #0056b3;
+}
+
+.detailsBtn {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: auto 50px;
+}
+
+.detailsBtn:hover {
+    background-color: #0056b3;
+    border: 1px solid #0056b3;
+}

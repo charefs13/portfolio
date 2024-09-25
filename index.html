@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@120.4,200..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+    <title>Portfolio - Mohamed Saadi</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="javascript:void(0)" data-target="/a-propos">À Propos</a></li>
+                <li class="divider">|</li>
+                <li><a href="javascript:void(0)" data-target="/competence">Compétences</a></li>
+                <li class="divider">|</li>
+                <li><a href="javascript:void(0)" data-target="/formations">Formations</a></li>
+                <li class="divider">|</li>
+                <li><a href="javascript:void(0)" data-target="/experiences">Expériences</a></li>
+                <li class="divider">|</li>
+                <li><a href="javascript:void(0)" data-target="/projets">Projets</a></li>
+                <li class="divider">|</li>
+                <li><a href="javascript:void(0)" data-target="/contact">Contact</a></li>
+            </ul>
+            <div><img src="./assets/images/menu.png" class="burger" alt="icone menue hamburger"></div>
+        </nav>
+    </header>
+    <main>
+        <section class="main-container">
+            <h1 id="title">SAADI MOHAMED</h1>
+            <p>Développeur FrontEnd / BackEnd</p>
+            <div id="app" class="fade"></div>
+        </section>
+        <section class="modale-section">
+            <div class="terminal-header">
+                <div class="terminal-header-content">
+                    <div class="terminal-icon">
+                        <div class="red close">
+                            <p>X</p>
+                        </div>
+                        <div class="yellow"></div>
+                        <div class="green"></div>
+                    </div>
+                    <h2 id="projetTitle"></h2>
+                </div>
+            </div>
+
+            <div class="modale">
+                <div class="imc">
+                    <section class="intro">
+                        <h1>Calculez Votre IMC</h1>
+
+                        <p>L’indice de masse corporelle ou IMC est une grandeur qui permet d'estimer la corpulence d’une
+                            personne.</p>
+                    </section>
+
+                    <section class="first-section">
+                        <h2>Vérifier si vous êtes obèse, en surpoid, normal ou en insufisance pondérale. </h2>
+                        <form action="">
+                            <div>
+                                <label for="poid">Entrez votre poids </label>
+                                <input type="number" id="poid" placeholder="50kg">
+                            </div>
+                            <div>
+                                <label for="taille">Entrez votre taille</label>
+                                <input type="number" id="taille" placeholder="1.60m">
+                            </div>
+
+                            <div>
+                                <button id="btn" onclick="imc()">Calculez votre imc</button>
+                            </div>
+                        </form>
+
+                        <div>
+                            <p>Votre imc est :</p>
+                            <p id="res"></p>
+                            <p id="inter"></p>
+                        </div>
+                    </section>
+                </div>
+                <div class="todo">
+                    <form action="">
+
+                        <input id="toDoTitle" type="text" placeholder="Titre de la tâche à faire">
+                        <textarea name="details" id="details" cols="100" rows="10"
+                            placeholder="Décrire la tache ici"></textarea>
+                        <button type="button" onclick=createArticle()>ENREGISTRER</button>
+                    </form>
+
+                    <div id="createHere">
+
+                    </div>
+                </div>
+                <div class="pendu">
+                    <section>
+
+                        <h2>Mot à deviner : </h2>
+                        <div id="guess"></div>
+                    </section>
+                    <section>
+                        <h3>Lettre déja utilisées</h3>
+                        <div id="used"></div>
+                        <div id="life"></div>
+                        <p id="endMessage"></p>
+
+                        <div id="keybord"></div>
+
+                    </section>
+                </div>
+                <iframe class="morpion" src="./PROJET MORPION/index.html" height="100%" width="100%"
+                    frameborder="0"></iframe>
+                <iframe class="catchme" src="./TD CLOWN/index.html" height="100%" width="100%" frameborder="0"></iframe>
+
+                <iframe class="school" src="./SCHOOL PROJECT/index.html" height="100%" width="100%"
+                    frameborder="0"></iframe>
+            </div>
+        </section>
+
+        <section class="main-container responsive">
+            <h1 id="title">SAADI MOHAMED</h1>
+            <p>Développeur FrontEnd / BackEnd</p>
+
+            <div class="carroussel">
+                <div>
+                    <article class="slide active">
+                        <div class="terminal-header">
+                            <div class="terminal-header-content">
+                                <div class="terminal-icon">
+                                    <div class="red"></div>
+                                    <div class="yellow"></div>
+                                    <div class="green"></div>
+                                </div>
+                                <h2>À PROPOS</h2>
+                            </div>
+                        </div>
+                        <div class="terminal-container">
+                            <div class="description">
+                                <p>Après 5 ans d'expérience dans le commerce et la relation client, je me suis
+                                    tourné vers ma
+                                    passion, l'informatique et le développement web.</p>
+                                <p>Bien que je sois fraîchement diplômé, je me considère en apprentissage
+                                    continu et aime
+                                    relever de nouveaux défis techniques.</p>
+                                <p>Mon objectif est de continuer à apprendre et à me développer en participant à
+                                    des projets
+                                    stimulants et en contribuant à des équipes dynamiques.</p>
+                                <p>Je suis passionné, curieux et motivé, doté d'un esprit d'équipe solide, et
+                                    d'excellentes
+                                    compétences en communication.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="slide">
+                        <div class="terminal-header">
+                            <div class="terminal-header-content">
+                                <div class="terminal-icon">
+                                    <div class="red"></div>
+                                    <div class="yellow"></div>
+                                    <div class="green"></div>
+                                </div>
+                                <h2>COMPETENCES</h2>
+                            </div>
+                        </div>
+
+                        <div class="terminal-container">
+                            <div class="quality-container">
+                                <ul class="technical">
+                                    <p>Compétences techniques :</p>
+                                    <li> <strong>Langages </strong> : Html/Css, JavaScript, PHP</li>
+                                    <li><strong>Frameworks</strong> : Bootstrap, Node.js</li>
+                                    <li> <strong>Outils </strong> : MySQL, Git, VS Code, Figma</li>
+                                </ul>
+
+                                <ul class="quality">
+                                    <p>Qualités :</p>
+                                    <li> <strong>Curiosité</strong> : Toujours désireux d'apprendre et de
+                                        s'améliorer.</li>
+                                    <li> <strong>Esprit d'équipe</strong> : Collaboration et partage
+                                        d'idées.</li>
+                                    <li> <strong>Communication</strong> : Clarté et concision.</li>
+                                    <li> <strong>Adaptabilité</strong> : Flexibilité face aux nouvelles
+                                        technologies.</li>
+                                    <li> <strong>Ténacité</strong> : Persévérance face aux défis.</li>
+                                    <li> <strong>Rigueur</strong> : Travail méthodique et minutieux.</li>
+                                </ul>
+                            </div>
+                    </article>
+                    <article class="slide">
+                        <div class="terminal-header">
+                            <div class="terminal-header-content">
+                                <div class="terminal-icon">
+                                    <div class="red"></div>
+                                    <div class="yellow"></div>
+                                    <div class="green"></div>
+                                </div>
+                                <h2>FORMATIONS</h2>
+                            </div>
+                        </div>
+
+                        <div class="terminal-container">
+                            <h3>2025 : Concepteur Développeur d’Applications</h3>
+                            <p>École Ri7 : HTML/CSS - JavaScript - Node JS - PHP - MySql</p>
+                            <h3>2024 : Développeur Web et Web Mobile</h3>
+                            <p>École Ri7 : HTML/CSS - JavaScript - Node JS - PHP - MySql</p>
+                        </div>
+                    </article>
+                    <article class="slide">
+                        <div class="terminal-header">
+                            <div class="terminal-header-content">
+                                <div class="terminal-icon">
+                                    <div class="red"></div>
+                                    <div class="yellow"></div>
+                                    <div class="green"></div>
+                                </div>
+                                <h2>EXPERIENCES</h2>
+                            </div>
+                        </div>
+
+                        <div class="terminal-container">
+                            <h3>Experiences Informatiques</h3>
+                            <p>2024 : Stage </p>
+                            <h3>Autres Experiences</h3>
+                            <p>2021- 2023 : Conseiller La Banque Postale.</p>
+                            <p>2019-2021 : Conseiller en boutique Orange.</p>
+                    </article>
+                    <article class="slide">
+                        <div class="terminal-header">
+                            <div class="terminal-header-content">
+                                <div class="terminal-icon">
+                                    <div class="red"></div>
+                                    <div class="yellow"></div>
+                                    <div class="green"></div>
+                                </div>
+                                <h2>PROJETS</h2>
+                            </div>
+                        </div>
+
+                        <div class="terminal-container">
+                            <div class="btn-container">
+                                <button type="button" class="btn" onclick="modale();">Calculatrice IMC</button>
+                                <button type="button" class="btn" onclick="modale()">To do List</button>
+                                <button type="button" class="btn" onclick="modale()">Jeu du Pendu</button>
+                                <button type="button" class="btn" onclick="modale()">Morpion/Puissance
+                                    4</button>
+                                <button type="button" class="btn" onclick="modale()">Catch Me if You
+                                    Can</button>
+                                <button type="button" class="btn" onclick="modale()">Gestion d'École</button>
+
+                            </div>
+
+
+                        </div>
+                    </article>
+                    <article class="slide">
+                        <div class="terminal-header">
+                            <div class="terminal-header-content">
+                                <div class="terminal-icon">
+                                    <div class="red"></div>
+                                    <div class="yellow"></div>
+                                    <div class="green"></div>
+                                </div>
+                                <h2>CONTACT</h2>
+                            </div>
+                        </div>
+
+                        <div class="terminal-container">
+                            <p>Tel : 06 38 58 71 65</p>
+                            <p>mail : saadimohamedcharef@gmail.com</p>
+                            <p>Linkedin : https://www.linkedin.com/in/mohamed-saadi-414455109/</p>
+
+                        </div>
+                    </article>
+                </div>
+                <div><img src="./assets/images/scroll-down.png" class="down"
+                        alt="boutton flèche vers le bas pour afficher le slide suivant"></div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div>
+            <img src="./assets/images/github.png" alt="logo GitHub">
+            <a href="https://github.com/charefs13" target="_blank">GitHub</a>
+        </div>
+        <div>
+            <img src="./assets/images/logo-linkedin.png" alt="logo Linkedin">
+            <a href="https://www.linkedin.com/in/mohamed-saadi-414455109/" target="_blank">Linkedin</a>
+        </div>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

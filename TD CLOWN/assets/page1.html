@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <title>Catch me if you Can</title>
+</head>
+
+<body class="game-background">
+    <audio id="theme" src="./sounds/theme.mp3"></audio>
+
+    <header>
+        <ul class="link-container" class="start-game">
+            <li class="start-game" id="difficulty">
+                <label for="easy">FACILE</label>
+                <input id="easy" type="radio" name="difficulty">
+                <label for="normal">NORMAL</label>
+                <input id="normal" type="radio" name="difficulty" checked>
+                <label for="impossible">IMPOSSIBLE</label>
+                <input id="impossible" type="radio" name="difficulty">
+            </li>
+            <li class="start-game" id="timmer">Temps:</li>
+            <li class="start-game" id="count">Score: </li>
+            <li class="start-game"> <a href="../index.html">Quitter</a> </li>
+        </ul>
+    </header>
+
+    <main>
+
+        <div id="gameContainer">
+            <img id="target" onclick="mooveTarget()" src="./images/target.png"
+                alt="Léonardo Dicaprio dans Attrapes moi si tu peux">
+
+            <audio id="myAudio" src="./sounds/shit.mp3"></audio>
+
+
+            <div class="end">
+                <p id="endMsg"></p>
+                <audio id="theme" src="./sounds/theme.mp3"></audio>
+                <a class="start-game" href="./page1.html" onclick="playTheme()"> REJOUER</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
